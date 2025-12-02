@@ -1,0 +1,27 @@
+
+{
+	"name": "SpringInn DevContainer",
+
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose-dev.yml"
+	],
+
+	"features": {
+
+		
+	},
+
+	"service": "app",
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"cweijan.vscode-mysql-client2",
+				"vmware.vscode-boot-dev-pack"
+			]
+		}
+	}
+
+}

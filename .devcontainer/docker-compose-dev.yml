@@ -1,0 +1,16 @@
+services:
+ 
+  app:
+    build: !reset null
+    image: eclipse-temurin:25-jdk
+    volumes:
+      - .:/app
+    command: sleep infinity
+  
+  mailserver:
+    image: maildev/maildev
+    environment:
+      - MAILDEV_SMTP_PORT=1025
+    ports:
+     - 1080:1080
+ 
